@@ -1,0 +1,343 @@
+body {
+    font-family: 'Alata', sans-serif;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(59, 55, 55);
+}
+
+.card-img-top {
+    width: 100%;
+    height: auto;
+}
+
+
+.countdown-box {
+    text-align: center;
+    margin: 0 10px;
+}
+
+.feed-text {
+    color: azure;
+    font-size: 50px;
+}
+
+.name {
+    color: magenta;
+    font-size: 50px;
+}
+
+.info {
+    color: rgb(15, 15, 15);
+    font-style: italic;
+    font-size: 25px;
+}
+
+.outer-box {
+    background-color: rgb(218, 208, 208);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#days,
+#hours,
+#minutes,
+#seconds {
+    font-size: 100px;
+    color: rgb(250, 16, 114);
+}
+.countdown-heading {
+    color: azure;
+    text-align: center;
+    font-size: 50px; /* Adjust the font size as needed */
+    margin-bottom: 1px; /* Add some margin at the bottom for spacing */
+}
+
+.countdown-container {
+    display: flex;
+    justify-content: space-between;
+    /* margin-bottom: 20px; */
+}
+.countdown-box {
+    flex: 1; /* Equal width for each countdown box */
+    background-color: white; /* Add white background color */
+    border-radius: 5px; /* Add some border radius for rounded corners */
+    padding: 10px; /* Add padding for spacing */
+    text-align: center; /* Center the content horizontally */
+    margin-bottom: 15px;
+    max-width: 300px;
+}
+
+
+@media screen and (max-width: 576px) {
+    .countdown-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.countdown-label {
+    display: block;
+    font-size: 40px;
+    color: rgb(43, 37, 37);
+}
+
+@media screen and (min-width: 992px) {
+    .countdown-container {
+        justify-content: space-evenly; /* Adjust space distribution between boxes */
+    }
+
+    #hours-box {
+        margin-left: 0; /* Reset the left margin for hours box */
+    }
+}
+
+.text-container {
+    text-align: center;
+    padding: 0 60px; /* Adjust padding as needed */
+    margin-bottom: 100px;
+}
+
+
+#couple-image,
+#couple-image1 {
+    position: relative;
+    height: 120vh; /* Adjust height for smaller screens */
+    overflow: hidden;
+}
+
+#couple-image img,
+#couple-image1 img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+}
+
+.overlay-content {
+    position: absolute;
+    bottom: 10vh; /* Align at the bottom */
+    left: 50%; /* Align horizontally */
+    transform: translateX(-50%); /* Center horizontally */
+    text-align: center;
+    color: white;
+    font-family: 'cursive', sans-serif;
+    font-size: 20px;
+    line-height: 1.5;
+    background-color: rgba(0, 0, 0, 0.3); /* Add background color with transparency */
+    padding: 10px; /* Add padding for better visibility */
+    width: 100%; /* Ensure full width */
+}
+
+.overlay-content1 {
+    position: absolute;
+    bottom: 10vh; /* Adjust as needed */
+    left: 30%; /* Center horizontally */
+    transform: translateX(-0%); /* Center horizontally */
+    text-align: center;
+    color: white;
+    font-family: 'cursive', sans-serif;
+    
+    line-height: 1.5;
+    background-color: rgba(0, 0, 0, 0.3); /* Add background color with transparency */
+    padding: 10px; /* Add padding for better visibility */
+    width: 90%; /* Adjust width as needed */
+    max-width: 400px; /* Add max-width for responsiveness */
+}
+
+.c1 {
+    font-size: 50px;
+}
+
+.c2 {
+    font-size: 30px;
+}
+
+@media screen and (max-width: 576px) {
+    .overlay-content1 {
+        width: 90%; /* Adjust width for smaller screens */
+    }
+}
+
+
+/* .overlay-content {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    font-family: 'cursive', sans-serif;
+    font-size: 20px;
+    line-height: 1.5;
+} */
+
+.overlay-content p span {
+    font-size: 50px;
+}
+
+#left-corner-image {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 1;
+}
+
+#left-corner-image img {
+    opacity: 1;
+    background-color: transparent;
+}
+
+.groom-image,
+.bride-image {
+    border-radius: 10%;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+@media screen and (min-width: 992px) {
+    /* Adjust the height of the image for laptop screens */
+    #couple-image img {
+        height: 90vh; /* Adjust the height as needed */
+    }
+}
+
+@media screen and (max-width: 768px) {
+    /* Adjust styles for screens smaller than 768px */
+    .countdown-container {
+        height: auto;
+    }
+
+    #couple-image,
+    #couple-image1 {
+        height: 40vh;
+    }
+
+    .overlay-content {
+        top: 30%;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    /* Adjust styles for screens smaller than 576px */
+    .countdown-container {
+        height: auto;
+    }
+
+    #couple-image,
+    #couple-image1 {
+        height: 30vh;
+    }
+
+    .overlay-content {
+        top: 20%;
+    }
+}
+
+#couple-image img,
+#couple-image1 img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+}
+
+@media screen and (max-width: 992px) {
+    /* For screens smaller than or equal to laptop size */
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .col-md-3 {
+        flex: 0 0 100%; /* Make each column full width on smaller screens */
+    }
+}
+
+@media screen and (min-width: 992px) {
+    /* For laptop screens */
+    .col-md-3 {
+        flex: 0 0 25%; /* Make each column 25% width for four columns per row */
+    }
+}
+
+@media screen and (max-width: 992px) {
+    /* For screens smaller than or equal to laptop size */
+    .col-md-4 {
+        flex: 0 0 100%; /* Make each column full width on smaller screens */
+    }
+}
+
+.text-feed p {
+    color: azure;
+}
+
+.functionStyle {
+    font-size: 30px; 
+    color: burlywood; 
+    font-style: italic;
+    /* display: flex;  */
+    /* justify-content: center; */
+}
+
+
+@media (max-width: 992px) {
+    .col-md-6 {
+        width: 100%;
+        margin-bottom: 20px; /* Optional: Add margin between stacked columns */
+    }
+}
+
+@media screen and (min-width: 992px) {
+    /* Adjust the height of the image for laptop screens */
+    #couple-image img {
+        height: 70vh; /* Adjust the height as needed */
+        object-fit: cover; /* Ensure the image covers the entire container */
+        object-position: center; /* Center the image horizontally and vertically */
+    }
+}
+
+
+/* Hide the mobile image by default */
+#couple-image1-mobile {
+    display: none;
+}
+
+/* For laptop screens */
+@media screen and (min-width: 992px) {
+    #couple-image1-desktop {
+        display: block;
+    }
+    #couple-image1-mobile {
+        display: none;
+    }
+}
+
+/* For mobile screens */
+@media screen and (max-width: 991px) {
+    #couple-image1-desktop {
+        display: none;
+    }
+    #couple-image1-mobile {
+        display: block;
+    }
+}
+
+.map-container {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.map-container iframe {
+    width: 100%;
+    max-width: 800px;
+    height: 450px; /* Adjust height as needed */
+}
