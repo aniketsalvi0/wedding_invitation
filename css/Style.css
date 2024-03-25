@@ -341,3 +341,38 @@ body {
     max-width: 800px;
     height: 450px; /* Adjust height as needed */
 }
+
+/* Styles for the desktop/laptop image */
+.couple-desktop {
+    display: block; /* Show this image by default */
+}
+
+/* Styles for the mobile image */
+.couple-mobile {
+    display: none; /* Hide this image by default */
+}
+
+/* Media query for screens smaller than or equal to 991px (mobile screens) */
+@media screen and (max-width: 991px) {
+    /* Hide desktop/laptop image */
+    .couple-desktop {
+        display: none;
+    }
+    /* Show mobile image */
+    .couple-mobile {
+        display: block;
+        /* max-height: 40vh; */
+    }
+}
+
+/* Media query for screens larger than 991px (desktop/laptop screens) */
+@media screen and (min-width: 992px) {
+    /* Show desktop/laptop image */
+    .couple-desktop {
+        display: block;
+    }
+    /* Hide mobile image */
+    .couple-mobile {
+        display: none;
+    }
+}
