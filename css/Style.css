@@ -265,7 +265,7 @@ body {
 @media screen and (min-width: 992px) {
     /* For laptop screens */
     .col-md-3 {
-        flex: 0 0 25%; /* Make each column 25% width for four columns per row */
+        flex: 0 0 100%; /* Make each column 25% width for four columns per row */
     }
 }
 
