@@ -137,7 +137,7 @@ body {
 .overlay-content1 {
     position: absolute;
     bottom: 10vh; /* Adjust as needed */
-    left: 30%; /* Center horizontally */
+    left: 38%; /* Center horizontally */
     transform: translateX(-0%); /* Center horizontally */
     text-align: center;
     color: white;
@@ -147,7 +147,7 @@ body {
     background-color: rgba(0, 0, 0, 0.3); /* Add background color with transparency */
     padding: 10px; /* Add padding for better visibility */
     width: 90%; /* Adjust width as needed */
-    max-width: 400px; /* Add max-width for responsiveness */
+    max-width: 500px; /* Add max-width for responsiveness */
 }
 
 .c1 {
