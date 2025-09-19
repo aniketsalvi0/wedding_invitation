@@ -256,6 +256,7 @@ body {
     .row {
         display: flex;
         flex-wrap: wrap;
+        margin: 0;
     }
     .col-md-3 {
         flex: 0 0 100%; /* Make each column full width on smaller screens */
@@ -377,5 +378,3 @@ body {
     }
 }
 
-/* later added to display complete photo on phone*/  
-  /* This affects only small screens */
