@@ -379,17 +379,10 @@ body {
 
 /* later added to display complete photo on phone*/  
   /* This affects only small screens */
-  @media (max-width: 768px) {
-    .row img {
-      width: 100%;        /* full width */
-      height: auto;       /* keep aspect ratio */
-      display: block;     /* remove inline gaps */
-    }
-  
-    .col-sm-12 {
-      padding-left: 0;    /* remove extra padding */
-      padding-right: 0;
-      margin-bottom: 0;
-    }
+  .gallery-img {
+    width: 100%;
+    height: 100vh;       /* take full screen height */
+    object-fit: cover;   /* crop extra part */
+    display: block;
   }
   
