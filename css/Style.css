@@ -379,10 +379,3 @@ body {
 
 /* later added to display complete photo on phone*/  
   /* This affects only small screens */
-  .gallery-img {
-    width: 100%;
-    height: 100vh;       /* take full screen height */
-    object-fit: cover;   /* crop extra part */
-    display: block;
-  }
-  
