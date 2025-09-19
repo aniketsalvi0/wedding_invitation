@@ -256,6 +256,7 @@ body {
     .row {
         display: flex;
         flex-wrap: wrap;
+        margin: 0;
     }
     .col-md-3 {
         flex: 0 0 100%; /* Make each column full width on smaller screens */
@@ -376,3 +377,9 @@ body {
         display: none;
     }
 }
+
+.img-fluid {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
