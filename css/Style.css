@@ -377,24 +377,18 @@ body {
     }
 }
 
-/* later added to display complete photo on phone*/
-/* Fix gallery images for mobile */
-@media screen and (max-width: 768px) {
-    .row img.img-fluid {
-      width: 100%;
-      height: auto;
-      display: block;
-      object-fit: cover; /* prevents whitespace if aspect ratio mismatches */
+/* later added to display complete photo on phone*/  
+  /* This affects only small screens */
+@media (max-width: 768px) {
+    .row img {
+      width: 100%;        /* occupy full width */
+      height: auto;       /* keep aspect ratio */
+      object-fit: cover;  /* crop if needed */
+      display: block;     /* remove inline gaps */
     }
   
-    /* remove side spacing in mobile */
-    .row {
-      margin-left: 0;
-      margin-right: 0;
-    }
-  
-    .row > div {
-      padding-left: 0;
+    .col-sm-12 {
+      padding-left: 0;    /* remove default spacing */
       padding-right: 0;
     }
   }
