@@ -256,7 +256,6 @@ body {
     .row {
         display: flex;
         flex-wrap: wrap;
-        margin: 0;
     }
     .col-md-3 {
         flex: 0 0 100%; /* Make each column full width on smaller screens */
@@ -378,8 +377,25 @@ body {
     }
 }
 
-.img-fluid {
-    width: 100%;
-    height: auto;
-    display: block;
+/* later added to display complete photo on phone*/
+/* Fix gallery images for mobile */
+@media screen and (max-width: 768px) {
+    .row img.img-fluid {
+      width: 100%;
+      height: auto;
+      display: block;
+      object-fit: cover; /* prevents whitespace if aspect ratio mismatches */
+    }
+  
+    /* remove side spacing in mobile */
+    .row {
+      margin-left: 0;
+      margin-right: 0;
+    }
+  
+    .row > div {
+      padding-left: 0;
+      padding-right: 0;
+    }
   }
+  
