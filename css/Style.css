@@ -379,17 +379,11 @@ body {
 
 /* later added to display complete photo on phone*/  
   /* This affects only small screens */
-@media (max-width: 768px) {
-    .row img {
-      width: 100%;        /* occupy full width */
-      height: auto;       /* keep aspect ratio */
-      object-fit: cover;  /* crop if needed */
-      display: block;     /* remove inline gaps */
-    }
-  
-    .col-sm-12 {
-      padding-left: 0;    /* remove default spacing */
-      padding-right: 0;
-    }
+  .row img {
+    width: 100%;
+    height: 100vh;       /* take full viewport height */
+    object-fit: cover;   /* crop instead of whitespace */
+    display: block;
   }
+  
   
