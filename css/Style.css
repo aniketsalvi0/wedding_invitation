@@ -137,7 +137,7 @@ body {
 .overlay-content1 {
     position: absolute;
     bottom: 10vh; /* Adjust as needed */
-    left: 38%; /* Center horizontally */
+    /* left: 30%; Center horizontally */
     transform: translateX(-0%); /* Center horizontally */
     text-align: center;
     color: white;
@@ -183,9 +183,11 @@ body {
 
 #left-corner-image {
     position: absolute;
-    top: 10px;
-    left: 10px;
+    top: 20px;
+    left: 20px;
     z-index: 1;
+    width: 100px;   /* set desired width */
+    height: 100px;  /* set desired height */
 }
 
 #left-corner-image img {
@@ -198,6 +200,10 @@ body {
     border-radius: 10%;
     overflow: hidden;
     margin-bottom: 20px;
+}
+
+#function1 {
+    margin-top: 16px;
 }
 
 @media screen and (min-width: 992px) {
@@ -365,16 +371,3 @@ body {
         /* max-height: 40vh; */
     }
 }
-
-/* Media query for screens larger than 991px (desktop/laptop screens) */
-@media screen and (min-width: 992px) {
-    /* Show desktop/laptop image */
-    .couple-desktop {
-        display: block;
-    }
-    /* Hide mobile image */
-    .couple-mobile {
-        display: none;
-    }
-}
-
